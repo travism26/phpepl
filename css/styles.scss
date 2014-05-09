@@ -63,6 +63,7 @@ body {
         margin-bottom: 10px;
         background-color: #eee;
         overflow: auto;
+		resize: vertical;
         .spinner {
           position: absolute;
           display: none;
@@ -117,6 +118,7 @@ body {
     text-align: right;
     right: -3px;
     top: -28px;
+	margin-right: 20px;
     span {
       color: #888;
       font-size: 15px;
@@ -142,7 +144,11 @@ body {
       cursor: pointer;
       border-radius: 7px;
       @include border-radius(10px);
+	  box-shadow: 5px 2px 5px rgba(111, 99, 99, 0.6);
       font-size: 20px;
+	  hover{
+		box-shadow: inset 0 0 5px #000000;
+	  }
     }
   }
 }
